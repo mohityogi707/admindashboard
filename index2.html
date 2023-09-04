@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- Static Required meta tags (should be same on every page) -->
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0, shrink-to-fit=no">
+    <meta name="theme-color" content="#1a73e9">
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+
+    <meta name="web-author" content="web-author-name">
+    <meta name="googlebot" content="all">
+    <meta name="revisit-after" content="3 days">
+    <meta name="copyright" content="Site Name">
+    <meta name="language" content="English">
+    <meta name="reply-to" content="info@imgglobalinfotech.com">
+    <meta name="distribution" content="Global">
+    <meta name="rating" content="General">
+
+    <!-- Twitter Meta -->
+    <meta name="twitter:site" content="@miradontsoa">
+    <meta name="twitter:creator" content="@miradontsoa">
+    <meta name="twitter:card" content="summary">
+
+    <!-- Facebook Meta -->
+    <meta property="fb:app_id" content="0">
+
+    <meta property="og:type" content="website">
+    <meta property="og:image:type" content="image/jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+
+    <!-- Dynamic Meta Tags (Should change for every page) -->
+
+    <title>Admin Panel</title>
+
+        <!-- Required meta tags -->
+    <meta name="title" content="Title here">
+    <meta name="discrption" content="Discrption here">
+    <meta name="keyword" content="Keyword here">
+
+    <!-- Twitter Meta -->
+    <meta name="twitter:title" content="Title here">
+    <meta name="twitter:description" content="Discrption here">
+    <meta name="twitter:image" content="assets/img/logo.png">
+
+    <!-- Facebook Meta -->
+    <meta property="og:url" content="">
+    <meta property="og:title" content="Title here">
+    <meta property="og:description" content="Discrption here">
+    <meta property="og:image" content="assets/img/logo.png">
+    <meta property="og:image:secure_url" content="assets/img/logo.png">
+    <meta name="classification" content="Title here">
+    <!-- slider -->
+    <script src="assets/libs/slider/js/jquery.min.js"></script>
+    <!-- favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/logo.png">
+    <link rel="icon" type="image/x-icon" href="assets/img/Index/logo.svg">
+    <!-- Bootstrap Css -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- Custom Css -->
+    <link rel="stylesheet" href="assets/css/style.min.css">
+    <!-- slider -->
+    <link rel="stylesheet" href="assets/libs/slider/css/owl.carousel.min.css">
+    <!-- swiper slider -->
+    <link rel="stylesheet" href="assets/libs/swiper/css/swiper-bundle.min.css">
+</head>
+<style>
+    .expanded {
+      width: 0 !important;
+    }
+</style>
+<body>
+<!-- admin panel start -->
+<!-- <div class="col-xl-auto h-100 adminpanel-leftmain offcanvas-start offcanvas-xl"  tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+      <div class="row h-100 adminpanel-left h-100 overflow-hidden shadow">
+       <div class="bg-white py-3 shadow-sm col-12 panel-logo d-flex justify-content-between align-items-center">
+        <a href="javascript:;" class="logo-img d-flex justify-content-center align-items-center"><img src="assets/img/Index/logo.svg" alt="logo" class="h-100 w-100 img-fluid"></a>
+        <button type="button" class="btn-close shadow-none panel-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+       </div>
+       <div class="col-12 flex-fill overflow-hidden panel-content ">
+          <ul class="row flex-nowrap py-3 flex-column overflow-y-auto h-100 list-unstyled gap-sm-3 gap-2">
+            <li class="col-12">
+              <a href="#sidebar-projects1" class="text-decoration-none sidelink-main position-relative d-flex align-items-center py-2 px-2" data-bs-toggle="collapse" role="button" aria-expanded="true" aria-controls="sidebar-projects1">
+                <span class="icon-link me-3 d-flex justify-content-center align-items-center"><img src="assets/img/Index/icon1.svg" alt="Project" class="h-100 w-100 img-fluid"></span>Projects</a>
+               <div class="collapse ps-4" id="sidebar-projects1">
+                <ul class="d-flex flex-column gap-2 list-unstyled ps-3">
+                  <li><a href="javascript:;" class="text-decoration-none sidelink">Overview</a></li>
+                  <li><a href="javascript:;" class="text-decoration-none sidelink">Grid View</a></li>
+                  <li><a href="javascript:;" class="text-decoration-none sidelink">Table View</a></li>
+                  <li><a href="javascript:;" class="text-decoration-none sidelink">Details</a></li>
+                  <li><a href="javascript:;" class="text-decoration-none sidelink">Create Project</a></li>
+                </ul>
+               </div>
+            </li>
+            <li class="col-12">
+              <a href="#sidebar-projects2" class="text-decoration-none sidelink-main position-relative d-flex align-items-center py-2 px-2" data-bs-toggle="collapse" role="button" aria-expanded="true" aria-controls="sidebar-projects2">
+                <span class="icon-link me-3 d-flex justify-content-center align-items-center"><img src="assets/img/Index/task.svg" alt="Project" class="h-100 w-100 img-fluid"></span>
+                 Tasks</a>
+               <div class="collapse ps-4" id="sidebar-projects2">
+                <ul class="d-flex flex-column gap-2 list-unstyled ps-3">
+                  <li><a href="javascript:;" class="text-decoration-none sidelink">Overview</a></li>
+                  <li><a href="javascript:;" class="text-decoration-none sidelink">Grid View</a></li>
+                  <li><a href="javascript:;" class="text-decoration-none sidelink">Table View</a></li>
+                  <li><a href="javascript:;" class="text-decoration-none sidelink">Details</a></li>
+                  <li><a href="javascript:;" class="text-decoration-none sidelink">Create Project</a></li>
+                </ul>
+               </div>
+            </li>
+            <li class="col-12">
+              <a href="#sidebar-projects3" class="text-decoration-none sidelink-main position-relative d-flex align-items-center py-2 px-2" data-bs-toggle="collapse" role="button" aria-expanded="true" aria-controls="sidebar-projects3">
+                <span class="icon-link me-3 d-flex justify-content-center align-items-center"><img src="assets/img/Index/file.svg" alt="Project" class="h-100 w-100 img-fluid"></span>
+                 Files</a>
+               <div class="collapse ps-4" id="sidebar-projects3">
+                <ul class="d-flex flex-column gap-2 list-unstyled ps-3">
+                  <li><a href="javascript:;" class="text-decoration-none sidelink">Overview</a></li>
+                  <li><a href="javascript:;" class="text-decoration-none sidelink">Table View</a></li>
+                  <li><a href="javascript:;" class="text-decoration-none sidelink">Media Gallery</a></li>
+                </ul>
+               </div>
+            </li>
+            <li class="col-12">
+              <a href="#sidebar-projects4" class="text-decoration-none sidelink-main position-relative d-flex align-items-center py-2 px-2" data-bs-toggle="collapse" role="button" aria-expanded="true" aria-controls="sidebar-projects4">
+                <span class="icon-link me-3 d-flex justify-content-center align-items-center"><img src="assets/img/Index/terminal.svg" alt="Project" class="h-100 w-100 img-fluid"></span>
+                 Integrations</a>
+               <div class="collapse ps-4" id="sidebar-projects4">
+                <ul class="d-flex flex-column gap-2 list-unstyled ps-3">
+                  <li><a href="javascript:;" class="text-decoration-none sidelink">Applications</a></li>
+                  <li><a href="javascript:;" class="text-decoration-none sidelink">Manage Apps</a></li>
+                </ul>
+               </div>
+            </li>
+            <li class="col-12">
+              <a href="#sidebar-projects5" class="text-decoration-none sidelink-main position-relative d-flex align-items-center py-2 px-2" data-bs-toggle="collapse" role="button" aria-expanded="true" aria-controls="sidebar-projects5">
+                <span class="icon-link me-3 d-flex justify-content-center align-items-center"><img src="assets/img/Index/user.svg" alt="Project" class="h-100 w-100 img-fluid"></span>
+                User</a>
+               <div class="collapse ps-4" id="sidebar-projects5">
+                <ul class="d-flex flex-column gap-2 list-unstyled ps-3">
+                  <li><a href="javascript:;" class="text-decoration-none sidelink">Profile</a></li>
+                  <li><a href="javascript:;" class="text-decoration-none sidelink">Table View</a></li>
+                  <li><a href="javascript:;" class="text-decoration-none sidelink">Permissions</a></li>
+                </ul>
+               </div>
+            </li>
+            <li class="col-12">
+              <a href="#sidebar-projects6" class="text-decoration-none sidelink-main position-relative d-flex align-items-center py-2 px-2" data-bs-toggle="collapse" role="button" aria-expanded="true" aria-controls="sidebar-projects6">
+                <span class="icon-link me-3 d-flex justify-content-center align-items-center"><img src="assets/img/Index/setting.svg" alt="Project" class="h-100 w-100 img-fluid"></span>
+                Settings</a>
+               <div class="collapse ps-4" id="sidebar-projects6">
+                <ul class="d-flex flex-column gap-2 list-unstyled ps-3">
+                  <li><a href="javascript:;" class="text-decoration-none sidelink">General</a></li>
+                  <li><a href="javascript:;" class="text-decoration-none sidelink">Security</a></li>
+                  <li><a href="javascript:;" class="text-decoration-none sidelink">Team</a></li>
+                  <li><a href="javascript:;" class="text-decoration-none sidelink">Billing</a></li>
+                  <li><a href="javascript:;" class="text-decoration-none sidelink">Notifications</a></li>
+                </ul>
+               </div>
+            </li>
+             <li class="col-12">
+              <a href="#sidebar-projects7" class="text-decoration-none sidelink-main position-relative d-flex align-items-center py-2 px-2" data-bs-toggle="collapse" role="button" aria-expanded="true" aria-controls="sidebar-projects7">
+                <span class="icon-link me-3 d-flex justify-content-center align-items-center"><img src="assets/img/Index/person-bounding-box.svg" alt="Project" class="h-100 w-100 img-fluid"></span>
+                 Authentication</a>
+               <div class="collapse ps-4" id="sidebar-projects7">
+                <ul class="d-flex flex-column gap-2 list-unstyled ps-3">
+                  <li><a href="javascript:;" class="text-decoration-none sidelink">Basic Login</a></li>
+                  <li><a href="javascript:;" class="text-decoration-none sidelink">Basic Resister</a></li>
+                  <li><a href="javascript:;" class="text-decoration-none sidelink">Basic Recover</a></li>
+                  <li><a href="javascript:;" class="text-decoration-none sidelink">Side Login</a></li>
+                  <li><a href="javascript:;" class="text-decoration-none sidelink">Side Resister</a></li>
+                  <li><a href="javascript:;" class="text-decoration-none sidelink">Side Recover</a></li>
+                </ul>
+               </div>
+            </li> 
+            <hr class="w-100 bg-black my-sm-3 my-2 col-12">
+            <li class="resource ps-3 col-12">RESOURCES</li>
+            <li class="col-12">
+              <a href="javascript:;" class="text-decoration-none sidelink-main2 d-flex align-items-center py-2 px-2">
+                <span class="icon-link me-3 d-flex justify-content-center align-items-center"><img src="assets/img/Index/code-square.svg" alt="Project" class="h-100 w-100 img-fluid"></span>Documentation</a>
+            </li>
+            <li class="col-12">
+              <a href="javascript:;" class="text-decoration-none sidelink-main2 d-flex align-items-center py-2 px-2">
+              <span class="icon-link me-3 d-flex justify-content-center align-items-center"><img src="assets/img/Index/journals.svg" alt="Project" class="h-100 w-100 img-fluid"></span>Changelog</a>
+            </li>
+          </ul>
+       </div>
+      </div>
+    </div> -->
+<!-- admin panel start -->
+
+
+
+
+<!-- <ul class="row flex-nowrap py-3 bg-white flex-column overflow-y-auto h-100 list-unstyled gap-sm-3 gap-2">
+            <li class="col-12">
+              <a href="#sidebar-projects1" class="text-decoration-none sidelink-main position-relative d-flex align-items-center py-2 px-2" data-bs-toggle="collapse" role="button" aria-expanded="true" aria-controls="sidebar-projects1">
+                <span class="icon-link me-3 d-flex justify-content-center align-items-center"><img src="assets/img/Index/icon1.svg" alt="Project" class="h-100 w-100 img-fluid"></span>Projects</a>
+               <div class="collapse ps-4" id="sidebar-projects1">
+                <ul class="d-flex flex-column gap-2 list-unstyled ps-3">
+                  <li><a href="javascript:;" class="text-decoration-none sidelink">Overview</a></li>
+                  <li><a href="javascript:;" class="text-decoration-none sidelink">Grid View</a></li>
+                  <li><a href="javascript:;" class="text-decoration-none sidelink">Table View</a></li>
+                  <li><a href="javascript:;" class="text-decoration-none sidelink">Details</a></li>
+                  <li><a href="javascript:;" class="text-decoration-none sidelink">Create Project</a></li>
+                </ul>
+               </div>
+            </li>
+            <li class="col-12">
+              <a href="#sidebar-projects2" class="text-decoration-none sidelink-main position-relative d-flex align-items-center py-2 px-2" data-bs-toggle="collapse" role="button" aria-expanded="true" aria-controls="sidebar-projects2">
+                <span class="icon-link me-3 d-flex justify-content-center align-items-center"><img src="assets/img/Index/task.svg" alt="Project" class="h-100 w-100 img-fluid"></span>
+                 Tasks</a>
+               <div class="collapse ps-4" id="sidebar-projects2">
+                <ul class="d-flex flex-column gap-2 list-unstyled ps-3">
+                  <li><a href="javascript:;" class="text-decoration-none sidelink">Overview</a></li>
+                  <li><a href="javascript:;" class="text-decoration-none sidelink">Grid View</a></li>
+                  <li><a href="javascript:;" class="text-decoration-none sidelink">Table View</a></li>
+                  <li><a href="javascript:;" class="text-decoration-none sidelink">Details</a></li>
+                  <li><a href="javascript:;" class="text-decoration-none sidelink">Create Project</a></li>
+                </ul>
+               </div>
+            </li>
+            <li class="col-12">
+              <a href="#sidebar-projects3" class="text-decoration-none sidelink-main position-relative d-flex align-items-center py-2 px-2" data-bs-toggle="collapse" role="button" aria-expanded="true" aria-controls="sidebar-projects3">
+                <span class="icon-link me-3 d-flex justify-content-center align-items-center"><img src="assets/img/Index/file.svg" alt="Project" class="h-100 w-100 img-fluid"></span>
+                 Files</a>
+               <div class="collapse ps-4" id="sidebar-projects3">
+                <ul class="d-flex flex-column gap-2 list-unstyled ps-3">
+                  <li><a href="javascript:;" class="text-decoration-none sidelink">Overview</a></li>
+                  <li><a href="javascript:;" class="text-decoration-none sidelink">Table View</a></li>
+                  <li><a href="javascript:;" class="text-decoration-none sidelink">Media Gallery</a></li>
+                </ul>
+               </div>
+            </li>
+            <li class="col-12">
+              <a href="#sidebar-projects4" class="text-decoration-none sidelink-main position-relative d-flex align-items-center py-2 px-2" data-bs-toggle="collapse" role="button" aria-expanded="true" aria-controls="sidebar-projects4">
+                <span class="icon-link me-3 d-flex justify-content-center align-items-center"><img src="assets/img/Index/terminal.svg" alt="Project" class="h-100 w-100 img-fluid"></span>
+                 Integrations</a>
+               <div class="collapse ps-4" id="sidebar-projects4">
+                <ul class="d-flex flex-column gap-2 list-unstyled ps-3">
+                  <li><a href="javascript:;" class="text-decoration-none sidelink">Applications</a></li>
+                  <li><a href="javascript:;" class="text-decoration-none sidelink">Manage Apps</a></li>
+                </ul>
+               </div>
+            </li>
+            <li class="col-12">
+              <a href="#sidebar-projects5" class="text-decoration-none sidelink-main position-relative d-flex align-items-center py-2 px-2" data-bs-toggle="collapse" role="button" aria-expanded="true" aria-controls="sidebar-projects5">
+                <span class="icon-link me-3 d-flex justify-content-center align-items-center"><img src="assets/img/Index/user.svg" alt="Project" class="h-100 w-100 img-fluid"></span>
+                User</a>
+               <div class="collapse ps-4" id="sidebar-projects5">
+                <ul class="d-flex flex-column gap-2 list-unstyled ps-3">
+                  <li><a href="javascript:;" class="text-decoration-none sidelink">Profile</a></li>
+                  <li><a href="javascript:;" class="text-decoration-none sidelink">Table View</a></li>
+                  <li><a href="javascript:;" class="text-decoration-none sidelink">Permissions</a></li>
+                </ul>
+               </div>
+            </li>
+            <li class="col-12">
+              <a href="#sidebar-projects6" class="text-decoration-none sidelink-main position-relative d-flex align-items-center py-2 px-2" data-bs-toggle="collapse" role="button" aria-expanded="true" aria-controls="sidebar-projects6">
+                <span class="icon-link me-3 d-flex justify-content-center align-items-center"><img src="assets/img/Index/setting.svg" alt="Project" class="h-100 w-100 img-fluid"></span>
+                Settings</a>
+               <div class="collapse ps-4" id="sidebar-projects6">
+                <ul class="d-flex flex-column gap-2 list-unstyled ps-3">
+                  <li><a href="javascript:;" class="text-decoration-none sidelink">General</a></li>
+                  <li><a href="javascript:;" class="text-decoration-none sidelink">Security</a></li>
+                  <li><a href="javascript:;" class="text-decoration-none sidelink">Team</a></li>
+                  <li><a href="javascript:;" class="text-decoration-none sidelink">Billing</a></li>
+                  <li><a href="javascript:;" class="text-decoration-none sidelink">Notifications</a></li>
+                </ul>
+               </div>
+            </li>
+             <li class="col-12">
+              <a href="#sidebar-projects7" class="text-decoration-none sidelink-main position-relative d-flex align-items-center py-2 px-2" data-bs-toggle="collapse" role="button" aria-expanded="true" aria-controls="sidebar-projects7">
+                <span class="icon-link me-3 d-flex justify-content-center align-items-center"><img src="assets/img/Index/person-bounding-box.svg" alt="Project" class="h-100 w-100 img-fluid"></span>
+                 Authentication</a>
+               <div class="collapse ps-4" id="sidebar-projects7">
+                <ul class="d-flex flex-column gap-2 list-unstyled ps-3">
+                  <li><a href="javascript:;" class="text-decoration-none sidelink">Basic Login</a></li>
+                  <li><a href="javascript:;" class="text-decoration-none sidelink">Basic Resister</a></li>
+                  <li><a href="javascript:;" class="text-decoration-none sidelink">Basic Recover</a></li>
+                  <li><a href="javascript:;" class="text-decoration-none sidelink">Side Login</a></li>
+                  <li><a href="javascript:;" class="text-decoration-none sidelink">Side Resister</a></li>
+                  <li><a href="javascript:;" class="text-decoration-none sidelink">Side Recover</a></li>
+                </ul>
+               </div>
+            </li> 
+            <hr class="w-100 bg-black my-sm-3 my-2 col-12">
+            <li class="resource ps-3 col-12">RESOURCES</li>
+            <li class="col-12">
+              <a href="javascript:;" class="text-decoration-none sidelink-main2 d-flex align-items-center py-2 px-2">
+                <span class="icon-link me-3 d-flex justify-content-center align-items-center"><img src="assets/img/Index/code-square.svg" alt="Project" class="h-100 w-100 img-fluid"></span>Documentation</a>
+            </li>
+            <li class="col-12">
+              <a href="javascript:;" class="text-decoration-none sidelink-main2 d-flex align-items-center py-2 px-2">
+              <span class="icon-link me-3 d-flex justify-content-center align-items-center"><img src="assets/img/Index/journals.svg" alt="Project" class="h-100 w-100 img-fluid"></span>Changelog</a>
+            </li>
+          </ul> -->
+
+
+          <div class="row">
+            <div class="col-lg-8 d-flex align-items-strech">
+              <div class="card w-100">
+                <div class="card-body">
+                  <div class="d-sm-flex d-block align-items-center justify-content-between mb-9">
+                    <div class="mb-3 mb-sm-0">
+                      <h5 class="card-title fw-semibold">Sales Overview</h5>
+                    </div>
+                    <div>
+                      <select class="form-select">
+                        <option value="1">March 2023</option>
+                        <option value="2">April 2023</option>
+                        <option value="3">May 2023</option>
+                        <option value="4">June 2023</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div id="chart"></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="row">
+                <div class="col-lg-12">
+                  <!-- Yearly Breakup -->
+                  <div class="card overflow-hidden">
+                    <div class="card-body p-4">
+                      <h5 class="card-title mb-9 fw-semibold">Yearly Breakup</h5>
+                      <div class="row align-items-center">
+                        <div class="col-8">
+                          <h4 class="fw-semibold mb-3">$36,358</h4>
+                          <div class="d-flex align-items-center mb-3">
+                            <span
+                              class="me-1 rounded-circle bg-light-success round-20 d-flex align-items-center justify-content-center">
+                              <i class="ti ti-arrow-up-left text-success"></i>
+                            </span>
+                            <p class="text-dark me-1 fs-3 mb-0">+9%</p>
+                            <p class="fs-3 mb-0">last year</p>
+                          </div>
+                          <div class="d-flex align-items-center">
+                            <div class="me-4">
+                              <span class="round-8 bg-primary rounded-circle me-2 d-inline-block"></span>
+                              <span class="fs-2">2023</span>
+                            </div>
+                            <div>
+                              <span class="round-8 bg-light-primary rounded-circle me-2 d-inline-block"></span>
+                              <span class="fs-2">2023</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-4">
+                          <div class="d-flex justify-content-center">
+                            <div id="breakup"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-12">
+                  <!-- Monthly Earnings -->
+                  <div class="card">
+                    <div class="card-body">
+                      <div class="row alig n-items-start">
+                        <div class="col-8">
+                          <h5 class="card-title mb-9 fw-semibold"> Monthly Earnings </h5>
+                          <h4 class="fw-semibold mb-3">$6,820</h4>
+                          <div class="d-flex align-items-center pb-1">
+                            <span
+                              class="me-2 rounded-circle bg-light-danger round-20 d-flex align-items-center justify-content-center">
+                              <i class="ti ti-arrow-down-right text-danger"></i>
+                            </span>
+                            <p class="text-dark me-1 fs-3 mb-0">+9%</p>
+                            <p class="fs-3 mb-0">last year</p>
+                          </div>
+                        </div>
+                        <div class="col-4">
+                          <div class="d-flex justify-content-end">
+                            <div
+                              class="text-white bg-secondary rounded-circle p-6 d-flex align-items-center justify-content-center">
+                              <i class="ti ti-currency-dollar fs-6"></i>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div id="earning"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+  <!-- Bootstrap Js -->
+  <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <!-- slider -->
+  <script src="assets/libs/slider/js/owl.carousel.min.js"></script>
+  <!-- swiper slider -->
+  <script src="assets/libs/swiper/js/swiper-bundle.min.js"></script>
+  <!-- Custom Js -->
+  <script src="assets/js/index.js"></script>
+ 
+<!-- <script>
+    const myTooltipEl = document.getElementById('myTooltip')
+    const tooltip = bootstrap.Tooltip.getOrCreateInstance(myTooltipEl)
+
+    myTooltipEl.addEventListener('hidden.bs.tooltip', () => {
+
+})
+tooltip.hide()
+
+</script> -->
+<script>
+    $('#button-enlarge').on('click', function () {
+  $('.admin').toggleClass('expanded');
+});
+//  $(document).ready(function(){
+//   $("#click").click(function(){
+//     $("#sectiontohide").hide();
+//   });
+//   $("#click2").click(function(){
+//     $("#sectiontohide2").hide();
+//   });
+//   $("#click3").click(function(){
+//     $("#sectiontohide3").hide();
+//   });
+//   $("#click4").click(function(){
+//     $("#sectiontohide4").hide();
+//   });
+//   $("#click5").click(function(){
+//     $("#sectiontohide5").hide();
+//   });
+// });
+
+//   function toggle_div_fun(id) {
+//   var divelement = document.getElementById(id);
+//   if(divelement.style.display == 'none')
+//     divelement.style.display = 'block';
+//   else
+//     divelement.style.display = 'none';
+// }
+</script>
+</body>
+</html>
