@@ -183,133 +183,6 @@
         & .dashboard-right {
             height: calc(100% - 120px);
             transform: translate(0, 0);
-            & .notification-offcanvas {
-                & .offcanvas-title {
-                    font-size: 22px;
-                }
-                & .btn-close {
-                    font-size: 14px;
-                }
-                & .notification-link {
-                    transition: all 0.1s ease-in-out;
-                    &:hover {
-                        background-color: lighten($red, 50) !important;
-                    }
-                    & .notification-icon {
-                        height: 35px;
-                        width: 35px;
-                    }
-                    & .notification-heading {
-                        font-size: 14px;
-                        color: $black;
-                    }
-                    & .notification-time {
-                        font-size: 13px;
-                        color: lighten($secondary, 20);
-                    }
-                    & .notification-title {
-                        font-size: 13px;
-                        color: lighten($secondary, 20);
-                        text-align: justify;
-                    }
-                } 
-            }
-            & .msg-offcanvas {
-                & .offcanvas-header {
-                    // & .offcanvas-title {
-                    //     font-size: 22px;
-                    // }
-                    & .btn-close {
-                        font-size: 14px;
-                    }
-                    // & .user-img2 {
-                    //     height: 45px;
-                    //     width: 45px;
-                    // }
-                }
-                & .msguser-img {
-                    height: 40px;
-                    width: 40px;
-                    &::before {
-                        content: '';
-                        position: absolute;
-                        right: 0;
-                        bottom: 0;
-                        height: 11px;
-                        width: 11px;
-                        border-radius: 50%;
-                        background-color: $teal;
-                        border: 2px solid $white;
-                    }
-                }
-                & .msguser-status {
-                    font-size: 13px;
-                    color: lighten($black, 70);
-                }
-                & .msguser-name {
-                    font-size: 15px;
-                }
-                & .msgusericon {
-                    height: 35px;
-                    width: 35px;
-                }
-                & .msg-detail {
-                    font-size: 12px;
-                    color: $black;
-                    &::before {
-                        content: '';
-                        position: absolute;
-                        height: 15px;
-                        width: 15px;
-                        top: -5px;
-                        left: 3px;
-                        background-color: lighten($secondary, 48);
-                        transform: rotate(45deg);
-                        border-radius: 1px;
-                    }
-                }
-                & .msgtime {
-                    font-size: 10px;
-                    color: lighten($black, 55);
-                    font-weight: 400;
-                }
-                & .msg-input {
-                    font-size: 13px;
-                    color: lighten($black, 25);
-                    &:focus {
-                        border-color: lighten($secondary, 45);
-                    }
-                    &:-webkit-autofill{
-                        -webkit-background-clip: text;
-                        transition: background-color 5000s ease-in-out 0s;
-                        // box-shadow: inset 0 0 20px 20px #23232329;
-                    }
-                }
-                & .send-btn {
-                    font-size: 13px;
-                }
-                & .msg-detail2 {
-                    & span {
-                        height: 3px;
-                        width: 3px;
-                        opacity: 0;
-                    }
-                    & :nth-child(1) {
-                        animation: 1s type-animation infinite .33333s;
-                    }
-                    @keyframes type-animation {
-                        50% {
-                            opacity: 1;
-                        }
-                    }
-                    & :nth-child(2) {
-                        animation: 1s type-animation infinite .66666s;
-                    }
-                    & :nth-child(3) {
-                        animation: 1s type-animation infinite .99999s;
-                    }       
-                }
-            }
             & .search-offcanvas {
                 height: 70px;
                 & .search-inputt {
@@ -498,6 +371,133 @@
             & .copyright-logo {
                 height: 26px;
                 width: 110px;
+            }
+        }
+        & .notification-offcanvas {
+            & .offcanvas-title {
+                font-size: 22px;
+            }
+            & .btn-close {
+                font-size: 14px;
+            }
+            & .notification-link {
+                transition: all 0.1s ease-in-out;
+                &:hover {
+                    background-color: lighten($red, 50) !important;
+                }
+                & .notification-icon {
+                    height: 35px;
+                    width: 35px;
+                }
+                & .notification-heading {
+                    font-size: 14px;
+                    color: $black;
+                }
+                & .notification-time {
+                    font-size: 13px;
+                    color: lighten($secondary, 20);
+                }
+                & .notification-title {
+                    font-size: 13px;
+                    color: lighten($secondary, 20);
+                    text-align: justify;
+                }
+            } 
+        }
+        & .msg-offcanvas {
+            & .offcanvas-header {
+                // & .offcanvas-title {
+                //     font-size: 22px;
+                // }
+                & .btn-close {
+                    font-size: 14px;
+                }
+                // & .user-img2 {
+                //     height: 45px;
+                //     width: 45px;
+                // }
+            }
+            & .msguser-img {
+                height: 40px;
+                width: 40px;
+                &::before {
+                    content: '';
+                    position: absolute;
+                    right: 0;
+                    bottom: 0;
+                    height: 11px;
+                    width: 11px;
+                    border-radius: 50%;
+                    background-color: $teal;
+                    border: 2px solid $white;
+                }
+            }
+            & .msguser-status {
+                font-size: 13px;
+                color: lighten($black, 70);
+            }
+            & .msguser-name {
+                font-size: 15px;
+            }
+            & .msgusericon {
+                height: 35px;
+                width: 35px;
+            }
+            & .msg-detail {
+                font-size: 12px;
+                color: $black;
+                &::before {
+                    content: '';
+                    position: absolute;
+                    height: 15px;
+                    width: 15px;
+                    top: -5px;
+                    left: 3px;
+                    background-color: lighten($secondary, 48);
+                    transform: rotate(45deg);
+                    border-radius: 1px;
+                }
+            }
+            & .msgtime {
+                font-size: 10px;
+                color: lighten($black, 55);
+                font-weight: 400;
+            }
+            & .msg-input {
+                font-size: 13px;
+                color: lighten($black, 25);
+                &:focus {
+                    border-color: lighten($secondary, 45);
+                }
+                &:-webkit-autofill{
+                    -webkit-background-clip: text;
+                    transition: background-color 5000s ease-in-out 0s;
+                    // box-shadow: inset 0 0 20px 20px #23232329;
+                }
+            }
+            & .send-btn {
+                font-size: 13px;
+            }
+            & .msg-detail2 {
+                & span {
+                    height: 3px;
+                    width: 3px;
+                    opacity: 0;
+                }
+                & :nth-child(1) {
+                    animation: 1s type-animation infinite .33333s;
+                }
+                @keyframes type-animation {
+                    50% {
+                        opacity: 1;
+                    }
+                }
+                & :nth-child(2) {
+                    animation: 1s type-animation infinite .66666s;
+                }
+                & :nth-child(3) {
+                    animation: 1s type-animation infinite .99999s;
+                }       
             }
         }
     }
@@ -1857,46 +1857,46 @@ body{
         }
         & .adminpanel-right {
             & .dashboard-nav {
-               & .admin-navbar {
-                    & .menu-btn {
-                    }
-                    & .dash-logo {
-                    }
-                    & .search-btn {
-                    }
-                    & .icon-link {
-                        &::before {
+                & .admin-navbar {
+                        & .menu-btn {
                         }
-                    }
-                    & .input-group {
-                        & .search-input {
-                           &:focus {
-                           }
+                        & .dash-logo {
                         }
-                    }
-                    & .message {
-                        &::before {
+                        & .search-btn {
                         }
-                    }
-                    & .navbar-link {
-                        & .navuser-icon {
-                        }
-                    }
-                    & .dropdown-menu {
-                        & .user-name {
-                        }
-                        & .user-position {
-                        }
-                        & .user-link {
-                            &:active {
-                            }
-                            &:hover {
-                            }
-                            & .user-dataicon {
+                        & .icon-link {
+                            &::before {
                             }
                         }
-                    }
-               }
+                        & .input-group {
+                            & .search-input {
+                            &:focus {
+                            }
+                            }
+                        }
+                        & .message {
+                            &::before {
+                            }
+                        }
+                        & .navbar-link {
+                            & .navuser-icon {
+                            }
+                        }
+                        & .dropdown-menu {
+                            & .user-name {
+                            }
+                            & .user-position {
+                            }
+                            & .user-link {
+                                &:active {
+                                }
+                                &:hover {
+                                }
+                                & .user-dataicon {
+                                }
+                            }
+                        }
+                }
             }
             & .dashboard-right {
                 & .notification-offcanvas {
@@ -2147,60 +2147,6 @@ body{
                }
             }
             & .dashboard-right {
-                & .notification-offcanvas {
-                    & .offcanvas-title {
-                        font-size: 20px;
-                    }
-                    & .btn-close {
-                    }
-                    & .notification-link {
-                        &:hover {
-                        }
-                        & .notification-icon {
-                            height: 32px;
-                            width: 32px;
-                        }
-                        & .notification-heading {
-                        }
-                        & .notification-time {
-                        }
-                        & .notification-title {
-                        }
-                    } 
-                }
-                & .msg-offcanvas {
-                    & .offcanvas-header {
-                        & .btn-close {
-                        }
-                        & .user-img2 {
-                        }
-                    }
-                    & .msguser-img {
-                        height: 38px;
-                        width: 38px;
-                        &::before {
-                        }
-                    }
-                    & .msguser-status {
-                    }
-                    & .msguser-name {
-                        font-size: 14px;
-                    }
-                    & .msgusericon {
-                    }
-                    & .msg-detail {
-                        &::before {
-                        }
-                    }
-                    & .msgtime {
-                    }
-                    & .msg-input {
-                        &:focus {
-                        }
-                    }
-                    & .send-btn {
-                    }
-                }
                 & .search-offcanvas {
                 }
                 & .card {
@@ -2261,7 +2207,7 @@ body{
                             }
                         }
                         & .viewall-btn {
-                           
+                            
                         }
                         & .delete-btn {
                             & .delete-icon {
@@ -2302,6 +2248,60 @@ body{
                             font-size: 12px;
                         }
                     }
+                }
+            }
+            & .notification-offcanvas {
+                & .offcanvas-title {
+                    font-size: 20px;
+                }
+                & .btn-close {
+                }
+                & .notification-link {
+                    &:hover {
+                    }
+                    & .notification-icon {
+                        height: 32px;
+                        width: 32px;
+                    }
+                    & .notification-heading {
+                    }
+                    & .notification-time {
+                    }
+                    & .notification-title {
+                    }
+                } 
+            }
+            & .msg-offcanvas {
+                & .offcanvas-header {
+                    & .btn-close {
+                    }
+                    & .user-img2 {
+                    }
+                }
+                & .msguser-img {
+                    height: 38px;
+                    width: 38px;
+                    &::before {
+                    }
+                }
+                & .msguser-status {
+                }
+                & .msguser-name {
+                    font-size: 14px;
+                }
+                & .msgusericon {
+                }
+                & .msg-detail {
+                    &::before {
+                    }
+                }
+                & .msgtime {
+                }
+                & .msg-input {
+                    &:focus {
+                    }
+                }
+                & .send-btn {
                 }
             }
         }
@@ -2351,130 +2351,65 @@ body{
         }
         & .adminpanel-right {
             & .dashboard-nav {
-               & .admin-navbar {
-                    & .menu-btn {
-                        height: 18px;
-                        width: 18px;
-                    }
-                    & .dash-logo {
-                        font-size: 17px;
-                    }
-                    & .search-btn {
-                        height: 18px;
-                        width: 18px;
-                    }
-                    & .icon-link {
-                        height:20px;
-                        width: 20px;
-                        &::before {
-                            height: 16px;
-                            width: 16px;
-                            font-size: 9px;
+                & .admin-navbar {
+                        & .menu-btn {
+                            height: 18px;
+                            width: 18px;
                         }
-                    }
-                    & .input-group {
-                        & .search-input {
-                           &:focus {
-                           }
+                        & .dash-logo {
+                            font-size: 17px;
                         }
-                    }
-                    & .message {
-                        &::before {
+                        & .search-btn {
+                            height: 18px;
+                            width: 18px;
                         }
-                    }
-                    & .navbar-link {
-                        font-size: 13px;
-                        & .navuser-icon {
-                            height: 28px;
-                            width: 28px;
+                        & .icon-link {
+                            height:20px;
+                            width: 20px;
+                            &::before {
+                                height: 16px;
+                                width: 16px;
+                                font-size: 9px;
+                            }
                         }
-                    }
-                    & .dropdown-menu {
-                        & .user-name {
+                        & .input-group {
+                            & .search-input {
+                            &:focus {
+                            }
+                            }
+                        }
+                        & .message {
+                            &::before {
+                            }
+                        }
+                        & .navbar-link {
                             font-size: 13px;
-                        }
-                        & .user-position {
-                            font-size: 11px;
-                        }
-                        & .user-link {
-                            font-size: 12px;
-                            &:active {
-                            }
-                            &:hover {
-                            }
-                            & .user-dataicon {
+                            & .navuser-icon {
+                                height: 28px;
+                                width: 28px;
                             }
                         }
-                    }
-               }
+                        & .dropdown-menu {
+                            & .user-name {
+                                font-size: 13px;
+                            }
+                            & .user-position {
+                                font-size: 11px;
+                            }
+                            & .user-link {
+                                font-size: 12px;
+                                &:active {
+                                }
+                                &:hover {
+                                }
+                                & .user-dataicon {
+                                }
+                            }
+                        }
+                }
             }
             & .dashboard-right {
-                & .notification-offcanvas {
-                    width: 350px;
-                    & .offcanvas-title {
-                        font-size: 18px;
-                    }
-                    & .btn-close {
-                        font-size: 13px;
-                    }
-                    & .notification-link {
-                        &:hover {
-                        }
-                        & .notification-icon {
-                            height: 30px;
-                            width: 30px;
-                        }
-                        & .notification-heading {
-                            font-size: 13px;
-                        }
-                        & .notification-time {
-                            font-size: 11px;
-                        }
-                        & .notification-title {
-                            font-size: 12px;
-                        }
-                    } 
-                }
-                & .msg-offcanvas {
-                    width: 350px;
-                    & .offcanvas-header {
-                        & .btn-close {
-                            font-size: 13px;
-                        }
-                        & .user-img2 {
-                        }
-                    }
-                    & .msguser-img {
-                        height: 36px;
-                        width: 36px;
-                        &::before {
-                        }
-                    }
-                    & .msguser-status {
-                        font-size: 12px;
-                    }
-                    & .msguser-name {
-                        font-size: 13px;
-                    }
-                    & .msgusericon {
-                    }
-                    & .msg-detail {
-                        font-size: 11px;
-                        &::before {
-                        }
-                    }
-                    & .msgtime {
-                        font-size: 9px;
-                    }
-                    & .msg-input {
-                        font-size: 12px;
-                        &:focus {
-                        }
-                    }
-                    & .send-btn {
-                        font-size: 12px;
-                    }
-                }
+               
                 & .search-offcanvas {
                 }
                 & .card {
@@ -2599,6 +2534,72 @@ body{
                     width: 100px;
                 }
             }
+            & .notification-offcanvas {
+                width: 350px;
+                & .offcanvas-title {
+                    font-size: 18px;
+                }
+                & .btn-close {
+                    font-size: 13px;
+                }
+                & .notification-link {
+                    &:hover {
+                    }
+                    & .notification-icon {
+                        height: 30px;
+                        width: 30px;
+                    }
+                    & .notification-heading {
+                        font-size: 13px;
+                    }
+                    & .notification-time {
+                        font-size: 11px;
+                    }
+                    & .notification-title {
+                        font-size: 12px;
+                    }
+                } 
+            }
+            & .msg-offcanvas {
+                width: 350px;
+                & .offcanvas-header {
+                    & .btn-close {
+                        font-size: 13px;
+                    }
+                    & .user-img2 {
+                    }
+                }
+                & .msguser-img {
+                    height: 36px;
+                    width: 36px;
+                    &::before {
+                    }
+                }
+                & .msguser-status {
+                    font-size: 12px;
+                }
+                & .msguser-name {
+                    font-size: 13px;
+                }
+                & .msgusericon {
+                }
+                & .msg-detail {
+                    font-size: 11px;
+                    &::before {
+                    }
+                }
+                & .msgtime {
+                    font-size: 9px;
+                }
+                & .msg-input {
+                    font-size: 12px;
+                    &:focus {
+                    }
+                }
+                & .send-btn {
+                    font-size: 12px;
+                }
+            }
         }
     }
 }
@@ -2649,134 +2650,68 @@ body{
         }
         & .adminpanel-right {
             & .dashboard-nav {
-               & .admin-navbar {
-                    & .menu-btn {
-                        height: 16px;
-                        width: 16px;
-                    }
-                    & .dash-logo {
-                        font-size: 16px;
-                    }
-                    & .search-btn {
-                        height: 16px;
-                        width: 16px;
-                    }
-                    & .icon-link {
-                        height:17px;
-                        width: 17px;
-                        &::before {
-                            height: 12px;
-                            width: 12px;
-                            font-size: 8px;
+                & .admin-navbar {
+                        & .menu-btn {
+                            height: 16px;
+                            width: 16px;
                         }
-                    }
-                    & .input-group {
-                        & .search-input {
-                           &:focus {
-                           }
+                        & .dash-logo {
+                            font-size: 16px;
                         }
-                    }
-                    & .message {
-                        &::before {
+                        & .search-btn {
+                            height: 16px;
+                            width: 16px;
                         }
-                    }
-                    & .navbar-link {
-                        font-size: 12px;
-                        & .navuser-icon {
-                            height: 22px;
-                            width: 22px;
-                        }
-                    }
-                    & .dropdown-menu {
-                        & .user-name {
-                            font-size: 12px;
-                        }
-                        & .user-position {
-                            font-size: 10px;
-                        }
-                        & .user-link {
-                            font-size: 11px;
-                            &:active {
-                            }
-                            &:hover {
-                            }
-                            & .user-dataicon {
+                        & .icon-link {
+                            height:17px;
+                            width: 17px;
+                            &::before {
                                 height: 12px;
                                 width: 12px;
+                                font-size: 8px;
                             }
                         }
-                    }
-               }
+                        & .input-group {
+                            & .search-input {
+                            &:focus {
+                            }
+                            }
+                        }
+                        & .message {
+                            &::before {
+                            }
+                        }
+                        & .navbar-link {
+                            font-size: 12px;
+                            & .navuser-icon {
+                                height: 22px;
+                                width: 22px;
+                            }
+                        }
+                        & .dropdown-menu {
+                            & .user-name {
+                                font-size: 12px;
+                            }
+                            & .user-position {
+                                font-size: 10px;
+                            }
+                            & .user-link {
+                                font-size: 11px;
+                                &:active {
+                                }
+                                &:hover {
+                                }
+                                & .user-dataicon {
+                                    height: 12px;
+                                    width: 12px;
+                                }
+                            }
+                        }
+                }
             }
             & .dashboard-right {
                 height: calc(100% - 110px);
-                & .notification-offcanvas {
-                    width: 280px;
-                    & .offcanvas-title {
-                        font-size: 16px;
-                    }
-                    & .btn-close {
-                        font-size: 12px;
-                    }
-                    & .notification-link {
-                        &:hover {
-                        }
-                        & .notification-icon {
-                            height: 26px;
-                            width: 26px;
-                        }
-                        & .notification-heading {
-                            font-size: 12px;
-                        }
-                        & .notification-time {
-                            font-size: 10px;
-                        }
-                        & .notification-title {
-                            font-size: 11px;
-                            line-height: 16px;
-                        }
-                    } 
-                }
-                & .msg-offcanvas {
-                    width: 280px;
-                    & .offcanvas-header {
-                        & .btn-close {
-                            font-size: 12px;
-                        }
-                        & .user-img2 {
-                        }
-                    }
-                    & .msguser-img {
-                        height: 32px;
-                        width: 32px;
-                        &::before {
-                        }
-                    }
-                    & .msguser-status {
-                        font-size: 11px;
-                    }
-                    & .msguser-name {
-                        font-size: 12px;
-                    }
-                    & .msgusericon {
-                    }
-                    & .msg-detail {
-                        font-size: 10px;
-                        &::before {
-                        }
-                    }
-                    & .msgtime {
-                        font-size: 8px;
-                    }
-                    & .msg-input {
-                        font-size: 11px;
-                        &:focus {
-                        }
-                    }
-                    & .send-btn {
-                        font-size: 11px;
-                    }
-                }
+               
                 & .search-offcanvas {
                     height: 70px;
                     & .search-inputt {
@@ -2906,6 +2841,73 @@ body{
                             font-size: 10px;
                         }
                     }
+                }
+            }
+            & .notification-offcanvas {
+                width: 280px;
+                & .offcanvas-title {
+                    font-size: 16px;
+                }
+                & .btn-close {
+                    font-size: 12px;
+                }
+                & .notification-link {
+                    &:hover {
+                    }
+                    & .notification-icon {
+                        height: 26px;
+                        width: 26px;
+                    }
+                    & .notification-heading {
+                        font-size: 12px;
+                    }
+                    & .notification-time {
+                        font-size: 10px;
+                    }
+                    & .notification-title {
+                        font-size: 11px;
+                        line-height: 16px;
+                    }
+                } 
+            }
+            & .msg-offcanvas {
+                width: 280px;
+                & .offcanvas-header {
+                    & .btn-close {
+                        font-size: 12px;
+                    }
+                    & .user-img2 {
+                    }
+                }
+                & .msguser-img {
+                    height: 32px;
+                    width: 32px;
+                    &::before {
+                    }
+                }
+                & .msguser-status {
+                    font-size: 11px;
+                }
+                & .msguser-name {
+                    font-size: 12px;
+                }
+                & .msgusericon {
+                }
+                & .msg-detail {
+                    font-size: 10px;
+                    &::before {
+                    }
+                }
+                & .msgtime {
+                    font-size: 8px;
+                }
+                & .msg-input {
+                    font-size: 11px;
+                    &:focus {
+                    }
+                }
+                & .send-btn {
+                    font-size: 11px;
                 }
             }
             & .copyright {
