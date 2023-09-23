@@ -2,6 +2,7 @@
     & .adminpanel-leftmain {
         width: 280px;
         transition: all 0.3s ease-in-out;
+        z-index: 1000;
         & .adminpanel-left {  
             & .panel-logo {
                 height: 60px;
@@ -84,6 +85,8 @@
     }
     & .rightSideContent {
         transition: all 0.3s ease-in-out;
+        position: relative;
+        z-index: 23232;
     }
     & .adminpanel-right {
         & .dashboard-nav {
@@ -1634,6 +1637,10 @@ body{
                 }
             }
         }
+        & .rightSideContent {
+            position: unset;
+            z-index: unset;
+        }
         & .adminpanel-right {
             & .dashboard-nav {
                & .navbar {
@@ -2029,6 +2036,22 @@ body{
                         }
                     }
                 }
+            }
+        }
+    }
+    .admin {
+        position: absolute !important;
+        left: -300px !important;
+        top: 0 !important;
+    }
+    body{
+        &.expanded{
+            & .admin {
+                transform: translateX(0) !important;
+                position: absolute !important;
+                left: 0 !important;
+                top: 0 !important;
+                z-index: 1 !important;
             }
         }
     }
@@ -2903,20 +2926,5 @@ body{
     }
 }
 @media screen and (max-width:1110px) {
-    .admin {
-        position: absolute !important;
-        left: -300px !important;
-        top: 0 !important;
-    }
-    body{
-        &.expanded{
-            & .admin {
-                transform: translateX(0) !important;
-                position: absolute !important;
-                left: 0 !important;
-                top: 0 !important;
-                z-index: 1 !important;
-            }
-        }
-    }
+    
 }

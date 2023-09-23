@@ -53,6 +53,7 @@
     <meta name="classification" content="Title here">
     <!-- slider -->
     <script src="assets/libs/slider/js/jquery.min.js"></script>
+    <script src="assets/libs/jquery.min.js"></script>
     <!-- favicon -->
     <link rel="shortcut icon" type="image/x-icon" href="assets/img/logo.png">
     <link rel="icon" type="image/x-icon" href="assets/img/Index/logo.svg">
@@ -63,30 +64,41 @@
     <!-- slider -->
     <link rel="stylesheet" href="assets/libs/slider/css/owl.carousel.min.css">
     <!-- chart -->
-   <!-- Or load different theme style -->
-   <!-- <link rel="stylesheet" href="assets/libs/apexchart/billboard.css"> -->
+    <!-- Or load different theme style -->
+    <!-- <link rel="stylesheet" href="assets/libs/apexchart/billboard.css"> -->
 </head>
-<style>
- 
-</style>
+
 <body class="">
 <!-- admin panel start -->
 <div class="container-fluid admin-panel overflow-hidden vh-100">
   <div class="row h-100 position-relative flex-nowrap">
     <div class="col-auto h-100 adminpanel-leftmain admin px-0">
       <div class="row h-100 adminpanel-left h-100 overflow-hidden mx-0 shadow">
-       <div class=" py-3 shadow-sm col-12 panel-logo z-2 bg-light">
-       <div class="d-flex align-items-center justify-content-between ">
-        <a href="javascript:;" class="logo-img d-flex justify-content-center align-items-center"><img src="assets/img/Index/logo.svg" alt="logo" class="h-100 w-100 img-fluid"></a>
-        <button type="button" class="btn-close shadow-none panel-close d-lg-none d-block" data-bs-dismiss="offcanvas" aria-label="Close" id="sideclose"></button>
-       </div>
-       </div>
-       <div class="col-12 flex-fill overflow-hidden panel-content z-1">
-          <ul class="accordion row flex-nowrap py-3 bg-white flex-column overflow-y-auto h-100 list-unstyled gap-sm-3 gap-2" id="accordionExample">
-            <li class="accordion-item col-12 border-0">
-                <a class="accordion-button rounded-0 shadow-none border-0 text-decoration-none sidelink-main position-relative d-flex align-items-center py-2 px-2 collapsed"type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                  <span class="icon-link me-3 d-flex justify-content-center align-items-center"><img src="assets/img/Index/icon1.svg" alt="Project" class="h-100 w-100 img-fluid"></span>Projects</a>
-                <div id="collapseOne" class="accordion-collapse collapse ps-3" data-bs-parent="#accordionExample">
+        <div class=" py-3 shadow-sm col-12 panel-logo z-2 bg-light">
+        <div class="d-flex align-items-center justify-content-between ">
+          <a href="javascript:;" class="logo-img d-flex justify-content-center align-items-center"><img src="assets/img/Index/logo.svg" alt="logo" class="h-100 w-100 img-fluid"></a>
+          <button type="button" class="btn-close shadow-none panel-close d-xl-none d-block" data-bs-dismiss="offcanvas" aria-label="Close" id="sideclose"></button>
+        </div>
+        </div>
+        <div class="col-12 flex-fill overflow-hidden panel-content z-1">
+            <ul class="accordion row flex-nowrap py-3 bg-white flex-column overflow-y-auto h-100 list-unstyled gap-sm-3 gap-2" id="accordionExample">
+              <li class="accordion-item col-12 border-0">
+                  <a class="accordion-button rounded-0 shadow-none border-0 text-decoration-none sidelink-main position-relative d-flex align-items-center py-2 px-2 collapsed"type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                    <span class="icon-link me-3 d-flex justify-content-center align-items-center"><img src="assets/img/Index/icon1.svg" alt="Project" class="h-100 w-100 img-fluid"></span>Projects</a>
+                  <div id="collapseOne" class="accordion-collapse collapse ps-3" data-bs-parent="#accordionExample">
+                  <ul class="d-flex flex-column gap-2 list-unstyled  accordion-body pt-0 ps-4">
+                    <li><a href="javascript:;" class="text-decoration-none sidelink">Overview</a></li>
+                    <li><a href="javascript:;" class="text-decoration-none sidelink">Grid View</a></li>
+                    <li><a href="javascript:;" class="text-decoration-none sidelink">Table View</a></li>
+                    <li><a href="javascript:;" class="text-decoration-none sidelink">Details</a></li>
+                    <li><a href="javascript:;" class="text-decoration-none sidelink">Create Project</a></li>
+                  </ul>
+                  </div>
+              </li>
+              <li class="accordion-item col-12 border-0">
+                <a class="accordion-button rounded-0 shadow-none border-0 text-decoration-none sidelink-main position-relative d-flex align-items-center py-2 px-2 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsetwo" aria-expanded="false" aria-controls="collapsetwo">
+                  <span class="icon-link me-3 d-flex justify-content-center align-items-center"><img src="assets/img/Index/task.svg" alt="Project" class="h-100 w-100 img-fluid"></span>Tasks</a>
+                <div id="collapsetwo" class="accordion-collapse collapse ps-3" data-bs-parent="#accordionExample">
                 <ul class="d-flex flex-column gap-2 list-unstyled  accordion-body pt-0 ps-4">
                   <li><a href="javascript:;" class="text-decoration-none sidelink">Overview</a></li>
                   <li><a href="javascript:;" class="text-decoration-none sidelink">Grid View</a></li>
@@ -94,93 +106,80 @@
                   <li><a href="javascript:;" class="text-decoration-none sidelink">Details</a></li>
                   <li><a href="javascript:;" class="text-decoration-none sidelink">Create Project</a></li>
                 </ul>
-                </div>
-            </li>
-            <li class="accordion-item col-12 border-0">
-              <a class="accordion-button rounded-0 shadow-none border-0 text-decoration-none sidelink-main position-relative d-flex align-items-center py-2 px-2 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsetwo" aria-expanded="false" aria-controls="collapsetwo">
-                <span class="icon-link me-3 d-flex justify-content-center align-items-center"><img src="assets/img/Index/task.svg" alt="Project" class="h-100 w-100 img-fluid"></span>Tasks</a>
-              <div id="collapsetwo" class="accordion-collapse collapse ps-3" data-bs-parent="#accordionExample">
+              </div>
+              </li>
+              <li class="accordion-item col-12 border-0">
+              <a class="accordion-button shadow-none rounded-0 border-0 text-decoration-none sidelink-main position-relative d-flex align-items-center py-2 px-2 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsethree" aria-expanded="false" aria-controls="collapsethree">
+                <span class="icon-link me-3 d-flex justify-content-center align-items-center"><img src="assets/img/Index/file.svg" alt="Project" class="h-100 w-100 img-fluid"></span>Files</a>
+              <div id="collapsethree" class="accordion-collapse collapse ps-3" data-bs-parent="#accordionExample">
               <ul class="d-flex flex-column gap-2 list-unstyled  accordion-body pt-0 ps-4">
                 <li><a href="javascript:;" class="text-decoration-none sidelink">Overview</a></li>
-                <li><a href="javascript:;" class="text-decoration-none sidelink">Grid View</a></li>
                 <li><a href="javascript:;" class="text-decoration-none sidelink">Table View</a></li>
-                <li><a href="javascript:;" class="text-decoration-none sidelink">Details</a></li>
-                <li><a href="javascript:;" class="text-decoration-none sidelink">Create Project</a></li>
-              </ul>
-            </div>
-            </li>
-            <li class="accordion-item col-12 border-0">
-            <a class="accordion-button shadow-none rounded-0 border-0 text-decoration-none sidelink-main position-relative d-flex align-items-center py-2 px-2 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsethree" aria-expanded="false" aria-controls="collapsethree">
-              <span class="icon-link me-3 d-flex justify-content-center align-items-center"><img src="assets/img/Index/file.svg" alt="Project" class="h-100 w-100 img-fluid"></span>Files</a>
-             <div id="collapsethree" class="accordion-collapse collapse ps-3" data-bs-parent="#accordionExample">
-             <ul class="d-flex flex-column gap-2 list-unstyled  accordion-body pt-0 ps-4">
-              <li><a href="javascript:;" class="text-decoration-none sidelink">Overview</a></li>
-              <li><a href="javascript:;" class="text-decoration-none sidelink">Table View</a></li>
-              <li><a href="javascript:;" class="text-decoration-none sidelink">Media Gallery</a></li>
-              </ul>
-            </div>
-            </li>
-            <li class="accordion-item col-12 border-0">
-             <a class="accordion-button rounded-0 shadow-none border-0 text-decoration-none sidelink-main position-relative d-flex align-items-center py-2 px-2 collapsed"type="button" data-bs-toggle="collapse" data-bs-target="#collapsefour" aria-expanded="false" aria-controls="collapsefour">
-             <span class="icon-link me-3 d-flex justify-content-center align-items-center"><img src="assets/img/Index/terminal.svg" alt="Project" class="h-100 w-100 img-fluid"></span>Integrations</a>
-             <div id="collapsefour" class="accordion-collapse collapse ps-3" data-bs-parent="#accordionExample">
-              <ul class="d-flex flex-column gap-2 list-unstyled  accordion-body pt-0 ps-4">
-              <li><a href="javascript:;" class="text-decoration-none sidelink">Applications</a></li>
-              <li><a href="javascript:;" class="text-decoration-none sidelink">Manage Apps</a></li>
-             </ul>
-           </div>
-            </li>
-            <li class="accordion-item col-12 border-0">
-             <a class="accordion-button rounded-0 shadow-none border-0 text-decoration-none sidelink-main position-relative d-flex align-items-center py-2 px-2 collapsed"type="button" data-bs-toggle="collapse" data-bs-target="#collapsefive" aria-expanded="false" aria-controls="collapsefive">
-             <span class="icon-link me-3 d-flex justify-content-center align-items-center"><img src="assets/img/Index/user.svg" alt="Project" class="h-100 w-100 img-fluid"></span>User</a>
-             <div id="collapsefive" class="accordion-collapse collapse ps-3" data-bs-parent="#accordionExample">
-               <ul class="d-flex flex-column gap-2 list-unstyled  accordion-body pt-0 ps-4">
-                <li><a href="javascript:;" class="text-decoration-none sidelink">Profile</a></li>
-                <li><a href="javascript:;" class="text-decoration-none sidelink">Table View</a></li>
-                <li><a href="javascript:;" class="text-decoration-none sidelink">Permissions</a></li>
-               </ul>
-              </div>
-            </li>
-            <li class="accordion-item col-12 border-0">
-              <a class="accordion-button rounded-0 shadow-none border-0 text-decoration-none sidelink-main position-relative d-flex align-items-center py-2 px-2 collapsed"type="button" data-bs-toggle="collapse" data-bs-target="#collapsesix" aria-expanded="false" aria-controls="collapsesix">
-              <span class="icon-link me-3 d-flex justify-content-center align-items-center"><img src="assets/img/Index/setting.svg" alt="Project" class="h-100 w-100 img-fluid"></span>Settings</a>
-              <div id="collapsesix" class="accordion-collapse collapse ps-3" data-bs-parent="#accordionExample">
-               <ul class="d-flex flex-column gap-2 list-unstyled  accordion-body pt-0 ps-4">
-                <li><a href="javascript:;" class="text-decoration-none sidelink">General</a></li>
-                <li><a href="javascript:;" class="text-decoration-none sidelink">Security</a></li>
-                <li><a href="javascript:;" class="text-decoration-none sidelink">Team</a></li>
-                <li><a href="javascript:;" class="text-decoration-none sidelink">Billing</a></li>
-                <li><a href="javascript:;" class="text-decoration-none sidelink">Notifications</a></li>
-               </ul>
-              </div>
-            </li>
-            <li class="accordion-item col-12 border-0">
-              <a class="accordion-button rounded-0 shadow-none border-0 text-decoration-none sidelink-main position-relative d-flex align-items-center py-2 px-2 collapsed"type="button" data-bs-toggle="collapse" data-bs-target="#collapseseven" aria-expanded="false" aria-controls="collapseseven">
-              <span class="icon-link me-3 d-flex justify-content-center align-items-center"><img src="assets/img/Index/icon1.svg" alt="Project" class="h-100 w-100 img-fluid"></span>Projects</a>
-              <div id="collapseseven" class="accordion-collapse collapse ps-3" data-bs-parent="#accordionExample">
-                <ul class="d-flex flex-column gap-2 list-unstyled  accordion-body pt-0 ps-4">
-                  <li><a href="javascript:;" class="text-decoration-none sidelink">Basic Login</a></li>
-                  <li><a href="javascript:;" class="text-decoration-none sidelink">Basic Resister</a></li>
-                  <li><a href="javascript:;" class="text-decoration-none sidelink">Basic Recover</a></li>
-                  <li><a href="javascript:;" class="text-decoration-none sidelink">Side Login</a></li>
-                  <li><a href="javascript:;" class="text-decoration-none sidelink">Side Resister</a></li>
-                  <li><a href="javascript:;" class="text-decoration-none sidelink">Side Recover</a></li>
+                <li><a href="javascript:;" class="text-decoration-none sidelink">Media Gallery</a></li>
                 </ul>
               </div>
-            </li>
-            <hr class="w-100 bg-black my-sm-3 my-2 col-12">
-            <li class="resource ps-3 col-12">RESOURCES</li>
-            <li class="col-12">
-              <a href="javascript:;" class="text-decoration-none sidelink-main2 d-flex align-items-center py-2 px-2">
-                <span class="icon-link me-3 d-flex justify-content-center align-items-center"><img src="assets/img/Index/code-square.svg" alt="Project" class="h-100 w-100 img-fluid"></span>Documentation</a>
-            </li>
-            <li class="col-12">
-              <a href="javascript:;" class="text-decoration-none sidelink-main2 d-flex align-items-center py-2 px-2">
-              <span class="icon-link me-3 d-flex justify-content-center align-items-center"><img src="assets/img/Index/journals.svg" alt="Project" class="h-100 w-100 img-fluid"></span>Changelog</a>
-            </li>
-          </ul>
-        <!-- </div> -->
-       </div>
+              </li>
+              <li class="accordion-item col-12 border-0">
+              <a class="accordion-button rounded-0 shadow-none border-0 text-decoration-none sidelink-main position-relative d-flex align-items-center py-2 px-2 collapsed"type="button" data-bs-toggle="collapse" data-bs-target="#collapsefour" aria-expanded="false" aria-controls="collapsefour">
+              <span class="icon-link me-3 d-flex justify-content-center align-items-center"><img src="assets/img/Index/terminal.svg" alt="Project" class="h-100 w-100 img-fluid"></span>Integrations</a>
+              <div id="collapsefour" class="accordion-collapse collapse ps-3" data-bs-parent="#accordionExample">
+                <ul class="d-flex flex-column gap-2 list-unstyled  accordion-body pt-0 ps-4">
+                <li><a href="javascript:;" class="text-decoration-none sidelink">Applications</a></li>
+                <li><a href="javascript:;" class="text-decoration-none sidelink">Manage Apps</a></li>
+              </ul>
+            </div>
+              </li>
+              <li class="accordion-item col-12 border-0">
+              <a class="accordion-button rounded-0 shadow-none border-0 text-decoration-none sidelink-main position-relative d-flex align-items-center py-2 px-2 collapsed"type="button" data-bs-toggle="collapse" data-bs-target="#collapsefive" aria-expanded="false" aria-controls="collapsefive">
+              <span class="icon-link me-3 d-flex justify-content-center align-items-center"><img src="assets/img/Index/user.svg" alt="Project" class="h-100 w-100 img-fluid"></span>User</a>
+              <div id="collapsefive" class="accordion-collapse collapse ps-3" data-bs-parent="#accordionExample">
+                <ul class="d-flex flex-column gap-2 list-unstyled  accordion-body pt-0 ps-4">
+                  <li><a href="javascript:;" class="text-decoration-none sidelink">Profile</a></li>
+                  <li><a href="javascript:;" class="text-decoration-none sidelink">Table View</a></li>
+                  <li><a href="javascript:;" class="text-decoration-none sidelink">Permissions</a></li>
+                </ul>
+                </div>
+              </li>
+              <li class="accordion-item col-12 border-0">
+                <a class="accordion-button rounded-0 shadow-none border-0 text-decoration-none sidelink-main position-relative d-flex align-items-center py-2 px-2 collapsed"type="button" data-bs-toggle="collapse" data-bs-target="#collapsesix" aria-expanded="false" aria-controls="collapsesix">
+                <span class="icon-link me-3 d-flex justify-content-center align-items-center"><img src="assets/img/Index/setting.svg" alt="Project" class="h-100 w-100 img-fluid"></span>Settings</a>
+                <div id="collapsesix" class="accordion-collapse collapse ps-3" data-bs-parent="#accordionExample">
+                <ul class="d-flex flex-column gap-2 list-unstyled  accordion-body pt-0 ps-4">
+                  <li><a href="javascript:;" class="text-decoration-none sidelink">General</a></li>
+                  <li><a href="javascript:;" class="text-decoration-none sidelink">Security</a></li>
+                  <li><a href="javascript:;" class="text-decoration-none sidelink">Team</a></li>
+                  <li><a href="javascript:;" class="text-decoration-none sidelink">Billing</a></li>
+                  <li><a href="javascript:;" class="text-decoration-none sidelink">Notifications</a></li>
+                </ul>
+                </div>
+              </li>
+              <li class="accordion-item col-12 border-0">
+                <a class="accordion-button rounded-0 shadow-none border-0 text-decoration-none sidelink-main position-relative d-flex align-items-center py-2 px-2 collapsed"type="button" data-bs-toggle="collapse" data-bs-target="#collapseseven" aria-expanded="false" aria-controls="collapseseven">
+                <span class="icon-link me-3 d-flex justify-content-center align-items-center"><img src="assets/img/Index/icon1.svg" alt="Project" class="h-100 w-100 img-fluid"></span>Projects</a>
+                <div id="collapseseven" class="accordion-collapse collapse ps-3" data-bs-parent="#accordionExample">
+                  <ul class="d-flex flex-column gap-2 list-unstyled  accordion-body pt-0 ps-4">
+                    <li><a href="javascript:;" class="text-decoration-none sidelink">Basic Login</a></li>
+                    <li><a href="javascript:;" class="text-decoration-none sidelink">Basic Resister</a></li>
+                    <li><a href="javascript:;" class="text-decoration-none sidelink">Basic Recover</a></li>
+                    <li><a href="javascript:;" class="text-decoration-none sidelink">Side Login</a></li>
+                    <li><a href="javascript:;" class="text-decoration-none sidelink">Side Resister</a></li>
+                    <li><a href="javascript:;" class="text-decoration-none sidelink">Side Recover</a></li>
+                  </ul>
+                </div>
+              </li>
+              <hr class="w-100 bg-black my-sm-3 my-2 col-12">
+              <li class="resource ps-3 col-12">RESOURCES</li>
+              <li class="col-12">
+                <a href="javascript:;" class="text-decoration-none sidelink-main2 d-flex align-items-center py-2 px-2">
+                  <span class="icon-link me-3 d-flex justify-content-center align-items-center"><img src="assets/img/Index/code-square.svg" alt="Project" class="h-100 w-100 img-fluid"></span>Documentation</a>
+              </li>
+              <li class="col-12">
+                <a href="javascript:;" class="text-decoration-none sidelink-main2 d-flex align-items-center py-2 px-2">
+                <span class="icon-link me-3 d-flex justify-content-center align-items-center"><img src="assets/img/Index/journals.svg" alt="Project" class="h-100 w-100 img-fluid"></span>Changelog</a>
+              </li>
+            </ul>
+          <!-- </div> -->
+        </div>
       </div>
     </div>
     <div class="col h-100 bg-light rightSideContent">
@@ -192,7 +191,7 @@
                   <!-- <button class="btn d-xl-none d-flex justify-content-center align-items-center menu-btn border-0 p-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
                     <img src="assets/img/Index/menu.svg" alt="menu" class="h-100 w-100 img-fluid">
                   </button> -->
-                  <button class="btn d-flex justify-content-center align-items-center menu-btn border-0 p-0" id="Enlarge">
+                  <button class="btn d-flex justify-content-center align-items-center menu-btn border-0 p-0" onclick="myFunction()" id="Enlarge">
                     <img src="assets/img/Index/menu.svg" alt="menu" class="h-100 w-100 img-fluid">
                   </button>
                   <a class="navbar-brand dash-logo fw-bold" href="javascript:;">Dashboard</a>
@@ -244,141 +243,141 @@
             
             <!-- recent activity card start -->
             <div class="col-12 py-4 dash-card ">
-            <div class="row g-3 py-3">
-              <div class="col-12 ps-3 mt-0 fw-medium recent-activity">Recent Activity</div>
-             <div class="col-lg-4 col-sm-6 col-12">
-               <div class="card h-100 p-3 bg-light border-0 shadow-sm">
-                   <div class="row align-items-center">
-                     <div class="col">
-                       <div class="card-budget fw-medium">Budget</div> 
-                       <div class="card-price fw-bold">$750.90</div>
-                     </div>
-                     <div class="col-auto">
-                       <div class="icon-shape bg-tertiary rounded-circle d-flex justify-content-center align-items-center ">
-                         <img src="assets/img/Index/creditcard.svg" alt="card" class="h-100 w-100 img-fluid">
-                       </div>
-                     </div>
-                   </div>
-                   <div class="row mx-0 mt-3 align-items-center">
-                     <div class="card-per rounded-2 py-1 col-auto d-flex align-items-center justify-content-center">
-                       <span class="arrow d-inline-flex"><img src="assets/img/Index/UpArrow.svg" alt="arrow" class="h-100 w-100 img-fluid"></span>
-                       <span class="per-title fw-semibold">30%</span>
-                     </div>
-                     <div class="col card-time fw-medium text-black-50">Since last month</div>
-                     </div>
-               </div>
-             </div>
-             <div class="col-lg-4 col-sm-6 col-12">
-               <div class="card h-100 p-3 bg-light shadow-sm border-0">
-                   <div class="row align-items-center">
-                     <div class="col">
-                       <div class="card-budget fw-medium">New projects</div> 
-                       <div class="card-price fw-bold">250</div>
-                     </div>
-                     <div class="col-auto">
-                       <div class="icon-shape bg-primary rounded-circle d-flex justify-content-center align-items-center ">
-                         <img src="assets/img/Index/Users3.svg" alt="card" class="h-100 w-100 img-fluid">
-                       </div>
-                     </div>
-                   </div>
-                   <div class="row mx-0 mt-3 align-items-center">
-                     <div class="card-per rounded-2 py-1 col-auto d-flex align-items-center justify-content-center">
-                       <span class="arrow d-inline-flex"><img src="assets/img/Index/UpArrow.svg" alt="arrow" class="h-100 w-100 img-fluid"></span>
-                       <span class="per-title fw-semibold">25%</span>
-                     </div>
-                     <div class="col card-time fw-medium text-black-50">Since last week</div>
-                   </div>
-                 </div>
-             </div>
-             <div class="col-lg-4 col-sm-6 col-12">
-               <div class="card h-100 p-3 bg-light border-0 shadow-sm">
-                   <div class="row align-items-center">
-                     <div class="col">
-                       <div class="card-budget fw-medium">Total hours</div> 
-                       <div class="card-price fw-bold">1.400</div>
-                     </div>
-                     <div class="col-auto">
-                       <div class="icon-shape bg-info rounded-circle d-flex justify-content-center align-items-center ">
-                         <img src="assets/img/Index/time.svg" alt="card" class="h-100 w-100 img-fluid">
-                       </div>
-                     </div>
-                   </div>
-                   <div class="row mx-0 mt-3 align-items-center">
-                     <div class="card-per rounded-2 py-1 col-auto d-flex align-items-center justify-content-center bg-danger bg-opacity-50">
-                       <span class="arrow d-inline-flex"><img src="assets/img/Index/down3.svg" alt="arrow" class="h-100 w-100 img-fluid"></span>
-                       <span class="per-title fw-semibold text-danger">23%</span>
-                     </div>
-                     <div class="col card-time fw-medium text-black-50">Since last month</div>
-                     </div>
-               </div>
-             </div>
-             <div class="col-lg-4 col-sm-6 col-12">
-               <div class="card h-100 p-3 bg-light border-0 shadow-sm">
-                   <div class="row align-items-center">
-                     <div class="col">
-                       <div class="card-budget fw-medium">Work load</div> 
-                       <div class="card-price fw-bold">95%</div>
-                     </div>
-                     <div class="col-auto">
-                       <div class="icon-shape bg-warning rounded-circle d-flex justify-content-center align-items-center ">
-                         <img src="assets/img/Index/minecart.svg" alt="card" class="h-100 w-100 img-fluid">
-                       </div>
-                     </div>
-                   </div>
-                   <div class="row mx-0 mt-3 align-items-center">
-                     <div class="card-per rounded-2 py-1 col-auto d-flex align-items-center justify-content-center">
-                       <span class="arrow d-inline-flex"><img src="assets/img/Index/UpArrow.svg" alt="arrow" class="h-100 w-100 img-fluid"></span>
-                       <span class="per-title fw-semibold">55%</span>
-                     </div>
-                     <div class="col card-time fw-medium text-black-50">Since last year</div>
-                   </div>
-               </div>
-             </div>
-             <div class="col-lg-4 col-sm-6 col-12">
-               <div class="card h-100 p-3 bg-light border-0 shadow-sm">
-                   <div class="row align-items-center">
-                     <div class="col">
-                       <div class="card-budget fw-medium">Sales</div> 
-                       <div class="card-price fw-bold">246</div>
-                     </div>
-                     <div class="col-auto">
-                       <div class="icon-shape bg-danger rounded-circle d-flex justify-content-center align-items-center ">
-                         <img src="assets/img/Index/sales.svg" alt="card" class="h-100 w-100 img-fluid">
-                       </div>
-                     </div>
-                   </div>
-                   <div class="row mx-0 mt-3 align-items-center">
-                     <div class="card-per rounded-2 py-1 col-auto d-flex align-items-center justify-content-center bg-danger bg-opacity-50">
-                       <span class="arrow d-inline-flex"><img src="assets/img/Index/down3.svg" alt="arrow" class="h-100 w-100 img-fluid"></span>
-                       <span class="per-title fw-semibold text-danger">32%</span>
-                     </div>
-                     <div class="col card-time fw-medium text-black-50">Since last week</div>
-                     </div>
-               </div>
-             </div>
-             <div class="col-lg-4 col-sm-6 col-12">
-               <div class="card h-100 p-3 bg-light border-0 shadow-sm">
-                   <div class="row align-items-center">
-                     <div class="col">
-                       <div class="card-budget fw-medium">Revenue</div> 
-                       <div class="card-price fw-bold">&#x20B9;24345</div>
-                     </div>
-                     <div class="col-auto">
-                       <div class="icon-shape bg-success rounded-circle d-flex justify-content-center align-items-center ">
-                         <img src="assets/img/Index/rupee-sign.svg" alt="card" class="h-100 w-100 img-fluid">
-                       </div>
-                     </div>
-                   </div>
-                   <div class="row mx-0 mt-3 align-items-center">
-                     <div class="card-per rounded-2 py-1 col-auto d-flex align-items-center justify-content-center">
-                       <span class="arrow d-inline-flex"><img src="assets/img/Index/UpArrow.svg" alt="arrow" class="h-100 w-100 img-fluid"></span>
-                       <span class="per-title fw-semibold">59%</span>
-                     </div>
-                     <div class="col card-time fw-medium text-black-50">Since last days</div>
-                   </div>
-               </div>
-             </div>
-           </div>
+              <div class="row g-3 py-3">
+                <div class="col-12 ps-3 mt-0 fw-medium recent-activity">Recent Activity</div>
+                <div class="col-lg-4 col-sm-6 col-12">
+                  <div class="card h-100 p-3 bg-light border-0 shadow-sm">
+                      <div class="row align-items-center">
+                        <div class="col">
+                          <div class="card-budget fw-medium">Budget</div> 
+                          <div class="card-price fw-bold">$750.90</div>
+                        </div>
+                        <div class="col-auto">
+                          <div class="icon-shape bg-tertiary rounded-circle d-flex justify-content-center align-items-center ">
+                            <img src="assets/img/Index/creditcard.svg" alt="card" class="h-100 w-100 img-fluid">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row mx-0 mt-3 align-items-center">
+                        <div class="card-per rounded-2 py-1 col-auto d-flex align-items-center justify-content-center">
+                          <span class="arrow d-inline-flex"><img src="assets/img/Index/UpArrow.svg" alt="arrow" class="h-100 w-100 img-fluid"></span>
+                          <span class="per-title fw-semibold">30%</span>
+                        </div>
+                        <div class="col card-time fw-medium text-black-50">Since last month</div>
+                        </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 col-12">
+                  <div class="card h-100 p-3 bg-light shadow-sm border-0">
+                      <div class="row align-items-center">
+                        <div class="col">
+                          <div class="card-budget fw-medium">New projects</div> 
+                          <div class="card-price fw-bold">250</div>
+                        </div>
+                        <div class="col-auto">
+                          <div class="icon-shape bg-primary rounded-circle d-flex justify-content-center align-items-center ">
+                            <img src="assets/img/Index/Users3.svg" alt="card" class="h-100 w-100 img-fluid">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row mx-0 mt-3 align-items-center">
+                        <div class="card-per rounded-2 py-1 col-auto d-flex align-items-center justify-content-center">
+                          <span class="arrow d-inline-flex"><img src="assets/img/Index/UpArrow.svg" alt="arrow" class="h-100 w-100 img-fluid"></span>
+                          <span class="per-title fw-semibold">25%</span>
+                        </div>
+                        <div class="col card-time fw-medium text-black-50">Since last week</div>
+                      </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 col-12">
+                  <div class="card h-100 p-3 bg-light border-0 shadow-sm">
+                      <div class="row align-items-center">
+                        <div class="col">
+                          <div class="card-budget fw-medium">Total hours</div> 
+                          <div class="card-price fw-bold">1.400</div>
+                        </div>
+                        <div class="col-auto">
+                          <div class="icon-shape bg-info rounded-circle d-flex justify-content-center align-items-center ">
+                            <img src="assets/img/Index/time.svg" alt="card" class="h-100 w-100 img-fluid">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row mx-0 mt-3 align-items-center">
+                        <div class="card-per rounded-2 py-1 col-auto d-flex align-items-center justify-content-center bg-danger bg-opacity-50">
+                          <span class="arrow d-inline-flex"><img src="assets/img/Index/down3.svg" alt="arrow" class="h-100 w-100 img-fluid"></span>
+                          <span class="per-title fw-semibold text-danger">23%</span>
+                        </div>
+                        <div class="col card-time fw-medium text-black-50">Since last month</div>
+                        </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 col-12">
+                  <div class="card h-100 p-3 bg-light border-0 shadow-sm">
+                      <div class="row align-items-center">
+                        <div class="col">
+                          <div class="card-budget fw-medium">Work load</div> 
+                          <div class="card-price fw-bold">95%</div>
+                        </div>
+                        <div class="col-auto">
+                          <div class="icon-shape bg-warning rounded-circle d-flex justify-content-center align-items-center ">
+                            <img src="assets/img/Index/minecart.svg" alt="card" class="h-100 w-100 img-fluid">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row mx-0 mt-3 align-items-center">
+                        <div class="card-per rounded-2 py-1 col-auto d-flex align-items-center justify-content-center">
+                          <span class="arrow d-inline-flex"><img src="assets/img/Index/UpArrow.svg" alt="arrow" class="h-100 w-100 img-fluid"></span>
+                          <span class="per-title fw-semibold">55%</span>
+                        </div>
+                        <div class="col card-time fw-medium text-black-50">Since last year</div>
+                      </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 col-12">
+                  <div class="card h-100 p-3 bg-light border-0 shadow-sm">
+                      <div class="row align-items-center">
+                        <div class="col">
+                          <div class="card-budget fw-medium">Sales</div> 
+                          <div class="card-price fw-bold">246</div>
+                        </div>
+                        <div class="col-auto">
+                          <div class="icon-shape bg-danger rounded-circle d-flex justify-content-center align-items-center ">
+                            <img src="assets/img/Index/sales.svg" alt="card" class="h-100 w-100 img-fluid">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row mx-0 mt-3 align-items-center">
+                        <div class="card-per rounded-2 py-1 col-auto d-flex align-items-center justify-content-center bg-danger bg-opacity-50">
+                          <span class="arrow d-inline-flex"><img src="assets/img/Index/down3.svg" alt="arrow" class="h-100 w-100 img-fluid"></span>
+                          <span class="per-title fw-semibold text-danger">32%</span>
+                        </div>
+                        <div class="col card-time fw-medium text-black-50">Since last week</div>
+                        </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 col-12">
+                  <div class="card h-100 p-3 bg-light border-0 shadow-sm">
+                      <div class="row align-items-center">
+                        <div class="col">
+                          <div class="card-budget fw-medium">Revenue</div> 
+                          <div class="card-price fw-bold">&#x20B9;24345</div>
+                        </div>
+                        <div class="col-auto">
+                          <div class="icon-shape bg-success rounded-circle d-flex justify-content-center align-items-center ">
+                            <img src="assets/img/Index/rupee-sign.svg" alt="card" class="h-100 w-100 img-fluid">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row mx-0 mt-3 align-items-center">
+                        <div class="card-per rounded-2 py-1 col-auto d-flex align-items-center justify-content-center">
+                          <span class="arrow d-inline-flex"><img src="assets/img/Index/UpArrow.svg" alt="arrow" class="h-100 w-100 img-fluid"></span>
+                          <span class="per-title fw-semibold">59%</span>
+                        </div>
+                        <div class="col card-time fw-medium text-black-50">Since last days</div>
+                      </div>
+                  </div>
+                </div>
+              </div>
             </div>
             <!-- recent activity card start -->
 
@@ -1148,7 +1147,7 @@
   <!-- Step 1) Load D3.js -->
   <!-- <script src="assets/libs/apexchart/billboard.js"></script> -->
 <script>
- $(document).ready(function(){
+  $(document).ready(function(){
   $("#click").click(function(){
     $("#sectiontohide").hide();
   });
@@ -1177,12 +1176,21 @@
 </script>
 
 <script>
-const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
-const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+  const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+  const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
 </script>
 
+
 <script>
-   $('#Enlarge').on('click', function () {
+  function myFunction() {
+    var element = document.getElementsByTagName("body");
+    element.classList.toggle("mystyle");
+  }
+</script>
+
+
+<script>
+  $('#Enlarge').on('click', function () {
         $('body').toggleClass('expanded');
   });
   $('#sideclose').on('click', function () {
